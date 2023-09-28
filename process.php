@@ -5,6 +5,23 @@ $username = "root";
 $password = "root";
 $dbname = "booking";
 
+/*
+
+First create a table in the database i.e booking
+
+command to create a table
+
+create table reservations(name varchar(100) NOT NULL,roll_no varchar(10) primary key,branch varchar(10) NOT NULL,year varchar(2) NOT NULL,mobile varchar(10),seat varchar(20) NOT NULL);
+
+*/
+
+/*
+
+Please fill the E8,I8 seats as they have been already select by default.
+You can also remove if you don't want .. It's your call.
+
+*/
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
