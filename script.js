@@ -43,6 +43,7 @@ for (let row = 1; row <= numRows; row++) {
 seats[5][8]=true;
 seats[9][8]=true;
 
+//default seats have been taken
 
 for (let row = 1; row <= numRows; row++) {
     for (let col = 1; col <= numCols; col++) {
