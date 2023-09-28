@@ -1,1 +1,1 @@
-# Seat Booking system
+Developed using HTML,JS,CSS and PHP
