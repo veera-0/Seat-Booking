@@ -24,7 +24,11 @@ $mobile = $_POST['mobile'];
 $selectedSeat = $_POST['selected-seat'];
 
 
+
 $sql = "INSERT INTO reservations (name, roll_no, branch, year, mobile, seat) VALUES ('$name', '$rollno', '$branch', '$year', '$mobile', '$selectedSeat')";
+
+//get columns to check the roll number
+$data = "SELECT roll_no from reservations";
 
 if ($conn->query($sql) === TRUE) {
     header("Location: result.html");
