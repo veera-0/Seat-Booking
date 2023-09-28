@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Reservation</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Seat Reservation</h1>
+    <form id="reservation-form" action="process.php" method="post">
+        <label for="name">Name:
+        <input type="text" id="name" name="name" required><br></label>
+        <label for="rollno">Roll No:
+        <input type="text" id="rollno" name="rollno" required><br></label>
+        <label for="branch">Branch:
+        <!-- <input type="text" id="branch" name="branch" required><br> -->
+        <select id="branch" name="branch">
+            <option>select branch</option>
+            <option>B.Tech</option>
+            <option>BBA</option>
+            <option>MBA</option>
+            <option>MCA</option>
+        </select></label>
+        <label for="year">Year:
+        <!-- <input type="text" id="year" name="year" required><br> -->
+        <select id="year" name="year">
+            <option>select year</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select></label>
+        <label for="mobile">Mobile Number:
+        <input type="text" id="mobile" name="mobile" required><br></label>
+
+        <h2>Select a Seat:</h2>
+        <div id="seat-map">
+            <!-- Seat grid will be generated here -->
+        </div>
+
+        <input type="hidden" id="selected-seat" name="selected-seat">
+        <input type="submit" value="Reserve Seat">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
