@@ -34,7 +34,7 @@ $result = $conn->query($data);
 while($row = $result->fetch_assoc()){
     $roll = $row['roll_no'];
     if($roll == $rollno){
-        echo "Alreay seat booked through this roll no";
+        header("Location: error_page.html")
         exit;
     }
     else if($conn->query($sql) === TRUE){
